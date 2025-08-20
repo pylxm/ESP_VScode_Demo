@@ -2,32 +2,48 @@
 
 Getting Started with VS Code IDE: 
 
-https://docs.espressif.com/projects/esp-idf/en/v4.2.1/esp32/get-started/vscode-setup.html
+For reference: https://docs.espressif.com/projects/esp-idf/en/v4.2.1/esp32/get-started/vscode-setup.html
 
-## Install brew for mac
+## STEP 1: Install brew for mac
 
-https://brew.sh/
+For reference: https://brew.sh/
+
+run in terminal: 
+
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
 restart terminal, run
 
-brew --version
+`brew --version`
 
-Homebrew 4.6.4
+it should output: Homebrew x.x.x
 
-## Standard Toolchain Setup for Linux and macOS
+## STEP 2: Standard Toolchain Setup for Linux and macOS
 
-https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html
+For reference: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html
 
+run in terminal: 
 
-## Install ESP 
+`brew install cmake ninja dfu-util`
+
+run in terminal: 
+
+`/usr/sbin/softwareupdate --install-rosetta --agree-to-license`
+
+## STEP 3: Install ESP 
 
 Recommended way to install ESP-IDF Visual Studio Code Extension is by downloading it from VS Code Marketplace: 
 
 https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension
 
-## install USB driver
+## STEP 4: Install USB driver
+
+Download universal drivers from: 
 
 https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
 
+
+## Step 5: Set up in VScode
 Select UART as Flash Method
+
 Select ESP32-C3 (QFN32) as Port to Use
