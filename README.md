@@ -4,7 +4,7 @@ Getting Started with VS Code IDE:
 
 For reference: https://docs.espressif.com/projects/esp-idf/en/v4.2.1/esp32/get-started/vscode-setup.html
 
-## STEP 1: Install brew for mac
+## (Skip for Win) STEP 1: Install brew for mac
 
 For reference: https://brew.sh/
 
@@ -18,7 +18,7 @@ restart terminal, run
 
 it should output: Homebrew x.x.x
 
-## STEP 2: Standard Toolchain Setup for Linux and macOS
+## (Skip for Win) STEP 2: Standard Toolchain Setup for Linux and macOS
 
 For reference: https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html
 
