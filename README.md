@@ -30,20 +30,30 @@ run in terminal:
 
 `/usr/sbin/softwareupdate --install-rosetta --agree-to-license`
 
-## STEP 3: Install ESP 
+## STEP 3: Install VS Code & Python
+
+Download and install Visual Studio Code
+
+https://code.visualstudio.com/download
+
+Download and install Python
+
+https://www.python.org/downloads/
+
+## STEP 4: Install ESP 
 
 Recommended way to install ESP-IDF Visual Studio Code Extension is by downloading it from VS Code Marketplace: 
 
 https://marketplace.visualstudio.com/items?itemName=espressif.esp-idf-extension
 
-## STEP 4: Install USB driver
+## STEP 5: Install USB driver
 
 Download universal drivers from: 
 
 https://www.silabs.com/software-and-tools/usb-to-uart-bridge-vcp-drivers?tab=downloads
 
 
-## Step 5: Set up in VScode
+## Step 6: Set up in VScode
 Select UART as Flash Method
 
 Select ESP32-C3 (QFN32) as Port to Use
