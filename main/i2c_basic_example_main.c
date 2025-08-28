@@ -16,9 +16,12 @@
 #include "freertos/task.h"
 #include "esp_log.h" 
 #include "driver/i2c_master.h"
+#include "driver/gpio.h"
+#include "esp_timer.h"
 
 static const char *TAG = "example";
 
+#define BUZZER_PIN                  5       /*!< GPIO number used for Buzzer */
 #define I2C_MASTER_SCL_IO           6       /*!< GPIO number used for I2C master clock */
 #define I2C_MASTER_SDA_IO           4       /*!< GPIO number used for I2C master data  */
 #define I2C_MASTER_NUM              I2C_NUM_0                   /*!< I2C port number for master dev */
@@ -108,11 +111,59 @@ void app_main(void)
     ESP_ERROR_CHECK(icm42670p_register_write_byte(dev_handle, ICM42670P_PWR_MGMT_REG_ADDR, 0x0F));
     vTaskDelay(pdMS_TO_TICKS(10));
 
+    // Configure buzzer GPIO
+    gpio_config_t buzzer_conf = {
+        .pin_bit_mask = (1ULL << BUZZER_PIN),
+        .mode = GPIO_MODE_OUTPUT,
+        .pull_up_en = GPIO_PULLUP_DISABLE,
+        .pull_down_en = GPIO_PULLDOWN_DISABLE,
+        .intr_type = GPIO_INTR_DISABLE
+    };
+    gpio_config(&buzzer_conf);
+    gpio_set_level(BUZZER_PIN, 0);
+
     int16_t accel[3], gyro[3];
-    for (int i = 0; i < 10; ++i) {
-        ESP_ERROR_CHECK(icm42670p_read_accel_gyro(dev_handle, accel, gyro));
-        ESP_LOGI(TAG, "Accel: X=%d Y=%d Z=%d | Gyro: X=%d Y=%d Z=%d", accel[0], accel[1], accel[2], gyro[0], gyro[1], gyro[2]);
-        vTaskDelay(pdMS_TO_TICKS(500));
+    int64_t last_sample_time = esp_timer_get_time(); // us
+    int64_t buzzer_start_time = 0;
+    bool buzzer_active = false;
+    int64_t last_buzzer_toggle = 0;
+    bool buzzer_state = false;
+    const int buzzer_duration_us = 100000; // 0.5s
+    const int buzzer_toggle_us = 500; // 500us for ~1kHz
+
+    while (true) {
+        int64_t now = esp_timer_get_time();
+        // IMU sampling at 50Hz (every 20ms)
+        if (now - last_sample_time >= 20000) {
+            last_sample_time = now;
+            ESP_ERROR_CHECK(icm42670p_read_accel_gyro(dev_handle, accel, gyro));
+            ESP_LOGI(TAG, "Accel: X=%d Y=%d Z=%d | Gyro: X=%d Y=%d Z=%d", accel[0], accel[1], accel[2], gyro[0], gyro[1], gyro[2]);
+            // Check if any gyro magnitude exceeds 2000
+            for (int j = 0; j < 3; ++j) {
+                if (abs(gyro[j]) > 2000) {
+                    buzzer_active = true;
+                    buzzer_start_time = now;
+                    last_buzzer_toggle = now;
+                    buzzer_state = false;
+                    break;
+                }
+            }
+        }
+        
+        // Non-blocking buzzer control
+        if (buzzer_active) {
+            if (now - buzzer_start_time < buzzer_duration_us) {
+                if (now - last_buzzer_toggle >= buzzer_toggle_us) {
+                    buzzer_state = !buzzer_state;
+                    gpio_set_level(BUZZER_PIN, buzzer_state ? 1 : 0);
+                    last_buzzer_toggle = now;
+                }
+            } else {
+                buzzer_active = false;
+                gpio_set_level(BUZZER_PIN, 0);
+            }
+        }
+        vTaskDelay(pdMS_TO_TICKS(1)); // yield to RTOS, minimal delay
     }
 
     ESP_ERROR_CHECK(i2c_master_bus_rm_device(dev_handle));

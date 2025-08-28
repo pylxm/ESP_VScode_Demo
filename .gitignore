@@ -1,2 +1,4 @@
 /ESP_IMU_Example/build
 /build
+/.vscode
+sdkconfig
