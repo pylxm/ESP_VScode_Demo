@@ -1,0 +1,11 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def shared_pods
+#  pod 'RNCryptor', '~> 5.1'
+  pod 'MetaWear'
+end
+
+target 'PDLoggerMW' do
+shared_pods
+end

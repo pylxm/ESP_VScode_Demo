@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012EEA522CEADB3100E427FF /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EEA512CEADB3100E427FF /* RecordButton.swift */; };
+		012EEA542CEB22DD00E427FF /* FilesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EEA532CEB22DD00E427FF /* FilesTableViewController.swift */; };
+		012EEA562CEB339300E427FF /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EEA552CEB339300E427FF /* VideoPlayerViewController.swift */; };
+		012EEA582CEB343800E427FF /* VideoPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 012EEA572CEB343800E427FF /* VideoPlayer.swift */; };
+		0142D1932CE57D8A00224718 /* MWIMU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D1922CE57D8A00224718 /* MWIMU.swift */; };
+		0142D1952CE582DE00224718 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D1942CE582DE00224718 /* Utils.swift */; };
+		0142D1982CE5C16000224718 /* StandingPostureCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D1972CE5C16000224718 /* StandingPostureCapture.swift */; };
+		0142D19C2CE5D9A900224718 /* A7mTUG.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D19B2CE5D9A900224718 /* A7mTUG.swift */; };
+		0142D19E2CE5E0A900224718 /* FilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D19D2CE5E0A900224718 /* FilesManager.swift */; };
+		0142D1A02CE5F39F00224718 /* FreeWalk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D19F2CE5F39F00224718 /* FreeWalk.swift */; };
+		0142D1A22CE5F6A800224718 /* A10mW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0142D1A12CE5F6A800224718 /* A10mW.swift */; };
+		014A53CF2CED7CC700763638 /* Gait.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A53CE2CED7CC700763638 /* Gait.swift */; };
+		014A53D12CED9E3400763638 /* HeelTapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A53D02CED9E3400763638 /* HeelTapping.swift */; };
+		014A53D32CEDD74E00763638 /* CsvViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A53D22CEDD74E00763638 /* CsvViewController.swift */; };
+		014A53D62CEDDA1000763638 /* CsvViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 014A53D52CEDDA1000763638 /* CsvViewer.swift */; };
+		016460D72CE48701007C131B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460D62CE48701007C131B /* AppDelegate.swift */; };
+		016460D92CE48701007C131B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460D82CE48701007C131B /* SceneDelegate.swift */; };
+		016460DE2CE48701007C131B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 016460DC2CE48701007C131B /* Main.storyboard */; };
+		016460E02CE48702007C131B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 016460DF2CE48702007C131B /* Assets.xcassets */; };
+		016460EC2CE48C8A007C131B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460EB2CE48C8A007C131B /* User.swift */; };
+		016460EE2CE48CF2007C131B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460ED2CE48CF2007C131B /* Settings.swift */; };
+		016460F02CE4980D007C131B /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460EF2CE4980D007C131B /* Patient.swift */; };
+		016460F22CE49873007C131B /* Assessment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460F12CE49873007C131B /* Assessment.swift */; };
+		016460F42CE499FB007C131B /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460F32CE499FB007C131B /* Exercise.swift */; };
+		016460F62CE49B14007C131B /* Sensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460F52CE49B14007C131B /* Sensor.swift */; };
+		016460F82CE4A2E3007C131B /* CSVWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460F72CE4A2E3007C131B /* CSVWriter.swift */; };
+		016460FA2CE4A3A5007C131B /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460F92CE4A3A5007C131B /* Camera.swift */; };
+		016460FD2CE4A85C007C131B /* EncDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 016460FC2CE4A85C007C131B /* EncDec.swift */; };
+		018014052CF9706D0004174A /* SummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018014042CF9706D0004174A /* SummaryViewController.swift */; };
+		018014092CF9890E0004174A /* SimpleTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 018014072CF9890D0004174A /* SimpleTableCell.xib */; };
+		0180140A2CF9890E0004174A /* SimpleTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 018014082CF9890D0004174A /* SimpleTableCell.swift */; };
+		01F3C2872CE7234B006A8F54 /* ParticipantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C2832CE7234B006A8F54 /* ParticipantsViewController.swift */; };
+		01F3C2882CE7234B006A8F54 /* SensorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C2842CE7234B006A8F54 /* SensorViewController.swift */; };
+		01F3C2892CE7234B006A8F54 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C2852CE7234B006A8F54 /* LoginViewController.swift */; };
+		01F3C28A2CE7234B006A8F54 /* ArIMUViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F3C2862CE7234B006A8F54 /* ArIMUViewController.swift */; };
+		D05018EB685DC1A74D7A07DB /* libPods-PDLoggerMW.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1840B2996210BE69352F12C6 /* libPods-PDLoggerMW.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		012EEA512CEADB3100E427FF /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		012EEA532CEB22DD00E427FF /* FilesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesTableViewController.swift; sourceTree = "<group>"; };
+		012EEA552CEB339300E427FF /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		012EEA572CEB343800E427FF /* VideoPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayer.swift; sourceTree = "<group>"; };
+		0142D1922CE57D8A00224718 /* MWIMU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MWIMU.swift; sourceTree = "<group>"; };
+		0142D1942CE582DE00224718 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		0142D1972CE5C16000224718 /* StandingPostureCapture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandingPostureCapture.swift; sourceTree = "<group>"; };
+		0142D19B2CE5D9A900224718 /* A7mTUG.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A7mTUG.swift; sourceTree = "<group>"; };
+		0142D19D2CE5E0A900224718 /* FilesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilesManager.swift; sourceTree = "<group>"; };
+		0142D19F2CE5F39F00224718 /* FreeWalk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeWalk.swift; sourceTree = "<group>"; };
+		0142D1A12CE5F6A800224718 /* A10mW.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A10mW.swift; sourceTree = "<group>"; };
+		014A53CE2CED7CC700763638 /* Gait.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gait.swift; sourceTree = "<group>"; };
+		014A53D02CED9E3400763638 /* HeelTapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeelTapping.swift; sourceTree = "<group>"; };
+		014A53D22CEDD74E00763638 /* CsvViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvViewController.swift; sourceTree = "<group>"; };
+		014A53D52CEDDA1000763638 /* CsvViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsvViewer.swift; sourceTree = "<group>"; };
+		016460D32CE48701007C131B /* PDLoggerMW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDLoggerMW.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		016460D62CE48701007C131B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		016460D82CE48701007C131B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		016460DD2CE48701007C131B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		016460DF2CE48702007C131B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		016460E42CE48702007C131B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		016460EB2CE48C8A007C131B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		016460ED2CE48CF2007C131B /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		016460EF2CE4980D007C131B /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		016460F12CE49873007C131B /* Assessment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assessment.swift; sourceTree = "<group>"; };
+		016460F32CE499FB007C131B /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
+		016460F52CE49B14007C131B /* Sensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sensor.swift; sourceTree = "<group>"; };
+		016460F72CE4A2E3007C131B /* CSVWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSVWriter.swift; sourceTree = "<group>"; };
+		016460F92CE4A3A5007C131B /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		016460FC2CE4A85C007C131B /* EncDec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncDec.swift; sourceTree = "<group>"; };
+		018014042CF9706D0004174A /* SummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SummaryViewController.swift; sourceTree = "<group>"; };
+		018014072CF9890D0004174A /* SimpleTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SimpleTableCell.xib; sourceTree = "<group>"; };
+		018014082CF9890D0004174A /* SimpleTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTableCell.swift; sourceTree = "<group>"; };
+		01F3C2832CE7234B006A8F54 /* ParticipantsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParticipantsViewController.swift; sourceTree = "<group>"; };
+		01F3C2842CE7234B006A8F54 /* SensorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorViewController.swift; sourceTree = "<group>"; };
+		01F3C2852CE7234B006A8F54 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		01F3C2862CE7234B006A8F54 /* ArIMUViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArIMUViewController.swift; sourceTree = "<group>"; };
+		1840B2996210BE69352F12C6 /* libPods-PDLoggerMW.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PDLoggerMW.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2964F907FB8C319069929420 /* Pods-PDLoggerMW.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDLoggerMW.debug.xcconfig"; path = "Target Support Files/Pods-PDLoggerMW/Pods-PDLoggerMW.debug.xcconfig"; sourceTree = "<group>"; };
+		73CD8C914A669CBB3A0EC01D /* Pods-PDLoggerMW.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PDLoggerMW.release.xcconfig"; path = "Target Support Files/Pods-PDLoggerMW/Pods-PDLoggerMW.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		016460D02CE48701007C131B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D05018EB685DC1A74D7A07DB /* libPods-PDLoggerMW.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		012EEA502CEADAFC00E427FF /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				016460F92CE4A3A5007C131B /* Camera.swift */,
+				012EEA512CEADB3100E427FF /* RecordButton.swift */,
+				012EEA572CEB343800E427FF /* VideoPlayer.swift */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		0142D1912CE57D3A00224718 /* Sensors */ = {
+			isa = PBXGroup;
+			children = (
+				016460F52CE49B14007C131B /* Sensor.swift */,
+				0142D1922CE57D8A00224718 /* MWIMU.swift */,
+			);
+			path = Sensors;
+			sourceTree = "<group>";
+		};
+		0142D1962CE5BEFB00224718 /* Assessments */ = {
+			isa = PBXGroup;
+			children = (
+				016460F12CE49873007C131B /* Assessment.swift */,
+				0142D1972CE5C16000224718 /* StandingPostureCapture.swift */,
+				0142D19B2CE5D9A900224718 /* A7mTUG.swift */,
+				0142D19F2CE5F39F00224718 /* FreeWalk.swift */,
+				0142D1A12CE5F6A800224718 /* A10mW.swift */,
+				014A53CE2CED7CC700763638 /* Gait.swift */,
+				014A53D02CED9E3400763638 /* HeelTapping.swift */,
+			);
+			path = Assessments;
+			sourceTree = "<group>";
+		};
+		014A53D42CEDD9EC00763638 /* CSV */ = {
+			isa = PBXGroup;
+			children = (
+				016460F72CE4A2E3007C131B /* CSVWriter.swift */,
+			);
+			path = CSV;
+			sourceTree = "<group>";
+		};
+		016460CA2CE48701007C131B = {
+			isa = PBXGroup;
+			children = (
+				016460D52CE48701007C131B /* PDLoggerMW */,
+				016460D42CE48701007C131B /* Products */,
+				D523B84AF4F78E907CEA9630 /* Pods */,
+				41D7192AF386B65A23CE74DD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		016460D42CE48701007C131B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				016460D32CE48701007C131B /* PDLoggerMW.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		016460D52CE48701007C131B /* PDLoggerMW */ = {
+			isa = PBXGroup;
+			children = (
+				01F3C2822CE7234B006A8F54 /* PD Logger App */,
+				016460EA2CE48C2F007C131B /* Models */,
+				016460D62CE48701007C131B /* AppDelegate.swift */,
+				016460D82CE48701007C131B /* SceneDelegate.swift */,
+				016460DC2CE48701007C131B /* Main.storyboard */,
+				016460DF2CE48702007C131B /* Assets.xcassets */,
+				016460E42CE48702007C131B /* Info.plist */,
+			);
+			path = PDLoggerMW;
+			sourceTree = "<group>";
+		};
+		016460EA2CE48C2F007C131B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0142D1962CE5BEFB00224718 /* Assessments */,
+				0142D1912CE57D3A00224718 /* Sensors */,
+				012EEA502CEADAFC00E427FF /* Video */,
+				014A53D42CEDD9EC00763638 /* CSV */,
+				016460EB2CE48C8A007C131B /* User.swift */,
+				016460ED2CE48CF2007C131B /* Settings.swift */,
+				016460EF2CE4980D007C131B /* Patient.swift */,
+				016460F32CE499FB007C131B /* Exercise.swift */,
+				016460FC2CE4A85C007C131B /* EncDec.swift */,
+				0142D1942CE582DE00224718 /* Utils.swift */,
+				0142D19D2CE5E0A900224718 /* FilesManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		018014062CF988CC0004174A /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				018014082CF9890D0004174A /* SimpleTableCell.swift */,
+				018014072CF9890D0004174A /* SimpleTableCell.xib */,
+				014A53D52CEDDA1000763638 /* CsvViewer.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		01F3C2822CE7234B006A8F54 /* PD Logger App */ = {
+			isa = PBXGroup;
+			children = (
+				018014062CF988CC0004174A /* UI */,
+				01F3C2852CE7234B006A8F54 /* LoginViewController.swift */,
+				01F3C2832CE7234B006A8F54 /* ParticipantsViewController.swift */,
+				01F3C2842CE7234B006A8F54 /* SensorViewController.swift */,
+				01F3C2862CE7234B006A8F54 /* ArIMUViewController.swift */,
+				012EEA532CEB22DD00E427FF /* FilesTableViewController.swift */,
+				012EEA552CEB339300E427FF /* VideoPlayerViewController.swift */,
+				014A53D22CEDD74E00763638 /* CsvViewController.swift */,
+				018014042CF9706D0004174A /* SummaryViewController.swift */,
+			);
+			path = "PD Logger App";
+			sourceTree = "<group>";
+		};
+		41D7192AF386B65A23CE74DD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1840B2996210BE69352F12C6 /* libPods-PDLoggerMW.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D523B84AF4F78E907CEA9630 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2964F907FB8C319069929420 /* Pods-PDLoggerMW.debug.xcconfig */,
+				73CD8C914A669CBB3A0EC01D /* Pods-PDLoggerMW.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		016460D22CE48701007C131B /* PDLoggerMW */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 016460E72CE48702007C131B /* Build configuration list for PBXNativeTarget "PDLoggerMW" */;
+			buildPhases = (
+				46E5957975E3336C011CC01E /* [CP] Check Pods Manifest.lock */,
+				016460CF2CE48701007C131B /* Sources */,
+				016460D02CE48701007C131B /* Frameworks */,
+				016460D12CE48701007C131B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDLoggerMW;
+			packageProductDependencies = (
+			);
+			productName = PDLoggerMW;
+			productReference = 016460D32CE48701007C131B /* PDLoggerMW.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		016460CB2CE48701007C131B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					016460D22CE48701007C131B = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 016460CE2CE48701007C131B /* Build configuration list for PBXProject "PDLoggerMW" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 016460CA2CE48701007C131B;
+			packageReferences = (
+			);
+			productRefGroup = 016460D42CE48701007C131B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				016460D22CE48701007C131B /* PDLoggerMW */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		016460D12CE48701007C131B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				016460E02CE48702007C131B /* Assets.xcassets in Resources */,
+				018014092CF9890E0004174A /* SimpleTableCell.xib in Resources */,
+				016460DE2CE48701007C131B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		46E5957975E3336C011CC01E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PDLoggerMW-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		016460CF2CE48701007C131B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012EEA582CEB343800E427FF /* VideoPlayer.swift in Sources */,
+				014A53D12CED9E3400763638 /* HeelTapping.swift in Sources */,
+				0180140A2CF9890E0004174A /* SimpleTableCell.swift in Sources */,
+				0142D1A02CE5F39F00224718 /* FreeWalk.swift in Sources */,
+				014A53D32CEDD74E00763638 /* CsvViewController.swift in Sources */,
+				016460FA2CE4A3A5007C131B /* Camera.swift in Sources */,
+				016460FD2CE4A85C007C131B /* EncDec.swift in Sources */,
+				012EEA562CEB339300E427FF /* VideoPlayerViewController.swift in Sources */,
+				01F3C2892CE7234B006A8F54 /* LoginViewController.swift in Sources */,
+				012EEA522CEADB3100E427FF /* RecordButton.swift in Sources */,
+				0142D1A22CE5F6A800224718 /* A10mW.swift in Sources */,
+				0142D19E2CE5E0A900224718 /* FilesManager.swift in Sources */,
+				016460EE2CE48CF2007C131B /* Settings.swift in Sources */,
+				014A53D62CEDDA1000763638 /* CsvViewer.swift in Sources */,
+				0142D1952CE582DE00224718 /* Utils.swift in Sources */,
+				016460F82CE4A2E3007C131B /* CSVWriter.swift in Sources */,
+				016460F42CE499FB007C131B /* Exercise.swift in Sources */,
+				016460EC2CE48C8A007C131B /* User.swift in Sources */,
+				016460F62CE49B14007C131B /* Sensor.swift in Sources */,
+				016460D72CE48701007C131B /* AppDelegate.swift in Sources */,
+				016460D92CE48701007C131B /* SceneDelegate.swift in Sources */,
+				01F3C2872CE7234B006A8F54 /* ParticipantsViewController.swift in Sources */,
+				0142D1932CE57D8A00224718 /* MWIMU.swift in Sources */,
+				018014052CF9706D0004174A /* SummaryViewController.swift in Sources */,
+				01F3C28A2CE7234B006A8F54 /* ArIMUViewController.swift in Sources */,
+				012EEA542CEB22DD00E427FF /* FilesTableViewController.swift in Sources */,
+				0142D19C2CE5D9A900224718 /* A7mTUG.swift in Sources */,
+				014A53CF2CED7CC700763638 /* Gait.swift in Sources */,
+				016460F02CE4980D007C131B /* Patient.swift in Sources */,
+				016460F22CE49873007C131B /* Assessment.swift in Sources */,
+				01F3C2882CE7234B006A8F54 /* SensorViewController.swift in Sources */,
+				0142D1982CE5C16000224718 /* StandingPostureCapture.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		016460DC2CE48701007C131B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				016460DD2CE48701007C131B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		016460E52CE48702007C131B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		016460E62CE48702007C131B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		016460E82CE48702007C131B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2964F907FB8C319069929420 /* Pods-PDLoggerMW.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3D6GP3T9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PDLoggerMW/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to get sensor data";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth to get sensor data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses camera to capture video";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nus.actlab.yurui.PDLoggerMW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		016460E92CE48702007C131B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73CD8C914A669CBB3A0EC01D /* Pods-PDLoggerMW.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P3D6GP3T9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PDLoggerMW/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "This app uses bluetooth to get sensor data";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "This app uses bluetooth to get sensor data";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app uses camera to capture video";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = nus.actlab.yurui.PDLoggerMW;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		016460CE2CE48701007C131B /* Build configuration list for PBXProject "PDLoggerMW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016460E52CE48702007C131B /* Debug */,
+				016460E62CE48702007C131B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		016460E72CE48702007C131B /* Build configuration list for PBXNativeTarget "PDLoggerMW" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				016460E82CE48702007C131B /* Debug */,
+				016460E92CE48702007C131B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 016460CB2CE48701007C131B /* Project object */;
+}
